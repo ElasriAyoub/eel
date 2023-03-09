@@ -15,6 +15,7 @@ def read():
 if __name__ == "__main__":
     ina = INA226(busnum=1, max_expected_amps=16, log_level=logging.INFO)
     ina.configure()
+    
     # ina.set_low_battery(5)
     sleep(3)
     print("===================================================Begin to read")
